@@ -78,7 +78,7 @@ namespace GestionAerolineas
                  + $"  Pistas: {numeroPistas}" + nl
                  + $"  CapVuelos: {capacidadVuelos}" + nl
                  + $"  Inauguración: {fechaInauguracion}" + nl
-                 + $"  País: {pais}";
+                 + $"  PaísDeRegistro: {pais}";
         }
 
     }

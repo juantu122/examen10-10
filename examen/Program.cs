@@ -14,18 +14,30 @@ namespace GestionAerolineas
                 opcion = int.Parse(Console.ReadLine() ?? "0");
                 switch (opcion)
                 {
-                    case 1: CrearAvion(); break;
-                    case 2: ListarAviones(); break;
-                    case 3: BuscarAvionPorId(); break;
-                    case 4: ModificarAvion(); break;
-                    case 5: EliminarAvion(); break;
-                    case 6: CrearAeropuerto(); break;
-                    case 7: ListarAeropuertos(); break;
-                    case 8: BuscarAeropuertoPorId(); break;
-                    case 9: ModificarAeropuerto(); break;
-                    case 10: EliminarAeropuerto(); break;
-                    case 11: Console.WriteLine("Saliendo..."); break;
-                    default: Console.WriteLine("Opción inválida"); break;
+                    case 1: CrearAvion();
+                        break;
+                    case 2: ListarAviones(); 
+                        break;
+                    case 3: BuscarAvionPorId(); 
+                        break;
+                    case 4: ModificarAvion(); 
+                        break;
+                    case 5: EliminarAvion(); 
+                        break;
+                    case 6: CrearAeropuerto(); 
+                        break;
+                    case 7: ListarAeropuertos(); 
+                        break;
+                    case 8: BuscarAeropuertoPorId();
+                        break;
+                    case 9: ModificarAeropuerto();
+                        break;
+                    case 10: EliminarAeropuerto();
+                        break;
+                    case 11: Console.WriteLine("Saliendo..."); 
+                        break;
+                    default: Console.WriteLine("Opción inválida");
+                        break;
                 }
                 
             } while (opcion != 11);
