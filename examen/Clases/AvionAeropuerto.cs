@@ -89,13 +89,17 @@ namespace GestionAerolineas
 
         public string Detalle()
         {
-            return $"Avión {{ Id={id}, " +
-                   $"Modelo={modelo}, " +
-                   $"Capacidad={capacidadPasajeros}, " +
-                   $"Año={anoFabricacion}, " +
-                   $"VelMax={velocidadMaxima:F2}, " +
-                   $"Autonomía={autonomiaVuelo:F2}, " +
-                   $"PaísOrigen={paisOrigen} }}";
+            var nl = Environment.NewLine;
+            return "Avión {" + nl
+                 + $"  Id={id}," + nl
+                 + $"  Modelo={modelo}," + nl
+                 + $"  Capacidad={capacidadPasajeros}," + nl
+                 + $"  Año={anoFabricacion}," + nl
+                 + $"  VelMax={velocidadMaxima:F2}," + nl
+                 + $"  Autonomía={autonomiaVuelo:F2}," + nl
+                 + $"  PaísOrigenDeRegistro=Ecuador" + nl
+                 + "}";
         }
+
     }
 }
